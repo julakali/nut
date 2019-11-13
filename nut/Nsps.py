@@ -45,7 +45,7 @@ def scan(base, force = False):
 		for name in _files:
 			suffix = pathlib.Path(name).suffix
 
-			if suffix == '.nsp' or suffix == '.nsx':
+			if suffix == '.nsp' or suffix == '.nsx' or suffix == '.nsz':
 				path = os.path.abspath(root + '/' + name)
 				fileList[path] = name
 

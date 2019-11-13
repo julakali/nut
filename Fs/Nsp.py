@@ -223,7 +223,7 @@ class Nsp(Pfs0):
 			self.version = z.groups()[0]
 
 		ext = pathlib.Path(path).suffix
-		if ext == '.nsp':
+		if ext == '.nsp' or ext == '.nsz':
 			if self.hasValidTicket == None:
 				self.setHasValidTicket(True)
 		elif ext == '.nsx':
